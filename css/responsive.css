@@ -17,11 +17,37 @@
     font-size: 18px;
     line-height: 28px;
   }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+  }
 }
 
 /* Tablet desktop :768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+  }
+
   .main-menu ul.navbar-nav li {
     display: inline-block;
     padding: 0 8px;
@@ -119,6 +145,19 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+  }
+
   .header-area {
     height: 60px !important;
     background: #000;
@@ -280,6 +319,19 @@
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+  }
+
   .submitbtn {
     float: none;
     width: 99.8%;
