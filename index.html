@@ -105,6 +105,25 @@
         background-color: white;
         border-radius :10px ; 
       }
+
+      #lang{
+        color: white;
+        float: right;
+        padding: 1.7em 1em 
+      }
+
+      #lang a {
+        color : white ; 
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform .2s;
+      }
+
+      #lang a:hover
+      {
+        font-size:16px ; 
+        color: #d3e8fd ; 
+      }
     </style>
 
 
@@ -112,16 +131,19 @@
   
 </head>
 
-  <body data-spy="scroll" data-target="#navbar-example">
+  <body data-spy="scroll" data-target="#navbar-example"  >
     <div id="preloader"></div>
+    <div id="google_translate_element"></div>
 
     <header>
       <!-- header-area start -->
       <div id="sticker" class="header-area">
+          <div id="lang" >  <a  onclick="to_Eng()" cursor=>Eng</a> | <a onclick="to_Vn()">VN</a> </div>
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <!-- Navigation -->
+              
               <nav class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -135,8 +157,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                    
                   </button>
                   <!-- Brand -->
                   <a class="navbar-brand  sticky-logo" href="#">
@@ -157,23 +178,23 @@
                 >
                   <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                      <a class="page-scroll" href="#home">Home</a>
+                      <a class="page-scroll" href="#home" id="Menu1">Menu1</a>
                     </li>
                     <li>
-                      <a class="page-scroll" href="#about">About</a>
+                      <a class="page-scroll" href="#about" id="Menu2">Menu2</a>
                     </li>
                     <li>
-                      <a class="page-scroll" href="#services">Services</a>
+                      <a class="page-scroll" href="#services" id="Menu3">Menu3</a>
                     </li>
                     <li>
-                      <a class="page-scroll" href="#team">Team</a>
+                      <a class="page-scroll" href="#team" id="Menu4">Menu4</a>
                     </li>                    
                     <li>
-                      <a class="page-scroll" href="#contact">Contact</a>
+                      <a class="page-scroll" href="#contact" id="Menu5">Menu5</a>
                     </li>
                   </ul>
                 </div>
-                <!-- navbar-collapse -->
+                <!-- navbar-collapse -->                
               </nav>
               <!-- END: Navigation -->
             </div>
@@ -217,8 +238,8 @@
                     data-wow-duration="2s"
                     data-wow-delay=".2s"
                   >
-                    <h2 class="title1">
-                      The Best Logistics Service Provider in Vietnam
+                    <h2 class="title1" id="Slider1_Title1">
+                        Slider1_Title1
                     </h2>
                   </div>
                   <!-- layer 2 -->
@@ -227,8 +248,8 @@
                     data-wow-duration="2s"
                     data-wow-delay=".1s"
                   >
-                    <h4 class="title2" >
-                      Leading company in shipping and customs services
+                    <h4 class="title2" id="Slider1_Title2" >
+                        Slider1_Title2
                     </h1>
                   </div>
                   <!-- layer 3 -->
@@ -260,7 +281,9 @@
                     data-wow-duration="2s"
                     data-wow-delay=".2s"
                   >
-                    <h2 class="title1">Vision and Mission</h2>
+                    <h2 class="title1" id="Slider2_Title1">
+                        Slider2_Title1
+                    </h2>
                   </div>
                   <!-- layer 2 -->
                   <div
@@ -268,9 +291,8 @@
                     data-wow-duration="2s"
                     data-wow-delay=".1s"
                   >
-                    <h4 class="title2">
-                        Gia Binh Logistics desires to become a leading provider of customs 
-                        clearance and transportation services in Vietnam.
+                    <h4 class="title2" id="Slider2_Title2">
+                        Slider2_Title2
                     </h1>
                   </div>
                   <!-- layer 3 -->
@@ -302,7 +324,9 @@
                     data-wow-duration="2s"
                     data-wow-delay=".2s"
                   >
-                    <h2 class="title1">We do what we say</h2>
+                    <h2 class="title1" id="Slider3_Title1">
+                        Slider3_Title1
+                    </h2>
                   </div>
                   <!-- layer 2 -->
                   <div
@@ -310,8 +334,8 @@
                     data-wow-duration="2s"
                     data-wow-delay=".1s"
                   >
-                    <h4 class="title2">
-                      Our goal is customer satisfaction
+                    <h4 class="title2" id="Slider3_Title2">
+                        Slider3_Title2
                     </h1>
                   </div>
                   <!-- layer 3 -->
@@ -976,7 +1000,12 @@
     <script src="js/main.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="js/google_translate.js"></script>
+    <script src="js/content.js"></script>
+    
+
   <script>
       AOS.init();
   </script>
