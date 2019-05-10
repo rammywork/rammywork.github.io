@@ -60,8 +60,8 @@
     <style media="screen">
       .float {
         position: fixed;
-        bottom: 10px;
-        left: 10px;
+        bottom: 70px;
+        right: 1px;
         border-radius: 50px;
         text-align: center;
         z-index: 100;
@@ -124,6 +124,7 @@
         font-size:16px ; 
         color: #d3e8fd ; 
       }
+
     </style>
 
 
@@ -133,7 +134,7 @@
 
   <body data-spy="scroll" data-target="#navbar-example">
     <div id="preloader"></div>
-    
+   
     <header>
       <!-- header-area start -->
       <div id="sticker" class="header-area">
@@ -142,7 +143,6 @@
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <!-- Navigation -->
-              
               <nav class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -193,7 +193,7 @@
                     </li>
                   </ul>
                 </div>
-                <!-- navbar-collapse -->                
+                <!-- navbar-collapse -->
               </nav>
               <!-- END: Navigation -->
             </div>
@@ -404,7 +404,7 @@
 
         <div class="row">
           <!-- single-well start-->
-          <div   class="col-md-6 col-sm-6 col-xs-12">
+          <div  data-aos="zoom-in" class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-left">
               <div class="single-well">
                 <br>
@@ -415,7 +415,7 @@
             </div>
           </div>
           <!-- single-well end-->
-          <div  class="col-md-6 col-sm-6 col-xs-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-middle">
               <div class="single-well">
                 <a href="#">
@@ -472,9 +472,7 @@
                       <i class="fa fa-plane"></i>
                     </a>
                     <h4>International Air Transport</h4>
-                    <p>
-
-                    </p>
+                    <p></p>
                   </div>
                 </div>
                 <!-- end about-details -->
@@ -491,9 +489,7 @@
                       <i class="fa fa-truck"></i>
                     </a>
                     <h4>Domestic Transport</h4>
-                    <p>
-
-                    </p>
+                    <p></p>
                   </div>
                 </div>
                 <!-- end about-details -->
@@ -658,20 +654,21 @@
     <!-- End Wellcome Area -->
 
     <!-- Start team Area -->
-    <div id="team"  data-aos="fade-up" class="our-team-area area-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Our special Team</h2>
+
+
+    <div id="team"  data-aos="fade-down" class="about-area area-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2 class="section-headline text-center">Our Special Team</h2>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div  class="row">
-
-          <!-- single-well start-->
-          <div data-aos="fade-up-right"   class="col-md-4 col-sm-4 col-xs-12">
+  
+          <div class="row">
+            <!-- single-well start-->
+            <div data-aos="zoom-in"  class="col-md-4 col-sm-4 col-xs-12">
               <div class="well-left">
                 <div class="single-well">
                   <a href="#" style="text-align: center">
@@ -680,38 +677,35 @@
                 </div>
               </div>
             </div>
-
-          <!-- single-well end-->
-          <div data-aos="fade-up-left"  class="col-md-6 col-sm-6 col-xs-12">
+            <!-- single-well end-->
+            <div data-aos="zoom-in"  class="col-md-6 col-sm-6 col-xs-12">
               <div class="well-middle">
                 <div class="single-well">
                   <a href="#">
                     <h4 class="sec-head"></h4>
                   </a>
                   <p>
-                    
                       - Gia Binh Logistics has experienced and enthusiastic young people, 
-                        with a high sense of responsibility, we always put the interests of 
-                        customers and business reputation first.
-                        <br>
-                      - We Pay attention to detail during each step in serving our customers,
-                        our team is capable of advising customers on optimal technical solutions.
-                        <br>
-                      - Focus on building a qualified and enthusiastic staff to complete the 
-                        assigned tasks in the best way.
-                    
+                      with a high sense of responsibility, we always put the interests of 
+                      customers and business reputation first.
+                      <br>
+                    - We Pay attention to detail during each step in serving our customers,
+                      our team is capable of advising customers on optimal technical solutions.
+                      <br>
+                    - Focus on building a qualified and enthusiastic staff to complete the 
+                      assigned tasks in the best way.
                   </p>
                   
                 </div>
               </div>
             </div>
             <!-- End col-->
-
+          </div>
+  
         </div>
-
-
       </div>
-    </div>
+      
+    
     <!-- End Team Area -->
 
     <!-- Start reviews Area -->
@@ -739,7 +733,7 @@
     
     <!-- End Suscrive Area -->
     <!-- Start contact Area -->
-    <div id="contact" class="contact-area">
+    <div id="contact" class="contact-area" style="background-color: #d8c190">
       <div class="contact-inner area-padding">
         <div class="contact-overly"></div>
         <div class="container ">
@@ -907,7 +901,7 @@
     <script src="js/main.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();
   </script>
